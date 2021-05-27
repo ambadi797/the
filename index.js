@@ -34,11 +34,13 @@ client.owners = ["754209204549714012"];
     require(`./handlers/${handler}`)(client, discord);
 })
 
-               if (message.content.startsWith(prefix + "d")) {
-                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+if (message.content.startsWith(prefix + "d")) {
+   if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 						  
 						  
-						  let args = message.content.split(" ").slice(1);
+						  
+	
+        let args = message.content.split(" ").slice(1);
                            var argresult = args.join(' '); 
               message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
               m.send(`${argresult}\n ${m}`);
@@ -53,8 +55,8 @@ client.owners = ["754209204549714012"];
                                      .setDescription(":white_check_mark:   |   Successfully Sent the Message to all Server Members.")
                                     
                                     .setColor("#00ff33")
-                                    .setTitle ('Message Has been Sent.')
-									                  .setFooter ("KMPGC BOT")
+                                    .setTitle ('Message Has been Sent
+				    .setFooter ("KMPGC BOT")
                                     .setImage('http://bit.ly/36Ske5f');
                                           message.channel.sendEmbed(embed3);
                             
