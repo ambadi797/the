@@ -34,7 +34,7 @@ client.owners = ["754209204549714012"];
     require(`./handlers/${handler}`)(client, discord);
 })
 
-               if (message.content.startsWith(prefix + "dm")) {
+               if (message.content.startsWith(prefix + "d")) {
                           if (!message.member.hasPermission("ADMINISTRATOR"))  return;
 						  
 						  
