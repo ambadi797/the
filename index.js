@@ -47,6 +47,7 @@ client.on("message", (message) => {
             "https://cdn.discordapp.com/emojis/786568294559645696.gif?v=1"
           )
     .setTitle('ᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛ')
+    .addField('ᴀɴɴᴏᴜɴᴄᴇ ву', message.author)
     .setDescription(text)
     .setThumbnail('https://cdn.discordapp.com/attachments/780663000997822464/847292333288194100/logo3.png')
     .setImage('https://media.discordapp.net/attachments/786193887978979438/786386654650433586/13-26-52-nitro_1.gif')   
