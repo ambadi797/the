@@ -34,6 +34,45 @@ client.owners = ["754209204549714012"];
     require(`./handlers/${handler}`)(client, discord);
 })
 
+               if (message.content.startsWith(prefix + "dm")) {
+                          if (!message.member.hasPermission("ADMINISTRATOR"))  return;
+						  
+						  
+						  let args = message.content.split(" ").slice(1);
+                           var argresult = args.join(' '); 
+              message.guild.members.filter(m => m.presence.status !== 'offline').forEach(m => {
+              m.send(`${argresult}\n ${m}`);
+ 
+})
+
+
+                          if (!args[1]) {
+                            
+							
+                                 let embed3 = new Discord.RichEmbed()
+                                     .setDescription(":white_check_mark:   |   Successfully Sent the Message to all Server Members.")
+                                    
+                                    .setColor("#00ff33")
+                                    .setTitle ('Message Has been Sent.')
+									                  .setFooter ("KMPGC BOT")
+                                    .setImage('http://bit.ly/36Ske5f');
+                                          message.channel.sendEmbed(embed3);
+                            
+                                        } else {
+                            
+                                           let embed4 = new Discord.RichEmbed()
+                                                            .setDescription(':white_check_mark: | Message has been Successfully Sent to @everyone xD')
+                                                                .setColor("#99999")
+                                                                .setFooter ("KMPGC BOT")
+                                                                .setTitle ('Message Has been Sent.')
+                                                                
+                               
+                                                                message.channel.sendEmbed(embed4);
+                                                                message.delete();
+                            }
+                          }
+						
+
 client.on("message", (message) => {
     if (message.content.startsWith(`.ann`)) {
       var text = message.content.split(' ').slice(1).join(' ');
