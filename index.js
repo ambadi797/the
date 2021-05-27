@@ -43,12 +43,12 @@ client.on("message", (message) => {
     .setColor("RANDOM")
     .setAuthor(
             "KMPGC",
-            "https://cdn.discordapp.com/attachments/810812254936498176/841957312969048064/811885160042594346.gif"
+            "https://cdn.discordapp.com/emojis/786568294559645696.gif?v=1"
           )
     .setTitle('ᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛ')
     .setDescription(text)
-    .setThumbnail('https://cdn.discordapp.com/attachments/811275118424621107/841956380884598794/tenor.gif')
-    .setImage('https://cdn.discordapp.com/attachments/811275118424621107/841956504705171456/the_kmpgc.gif')   
+    .setThumbnail('https://cdn.discordapp.com/attachments/780663000997822464/847292333288194100/logo3.png')
+    .setImage('https://media.discordapp.net/attachments/786193887978979438/786386654650433586/13-26-52-nitro_1.gif')   
     .setFooter('KMPGC BOT')
     .setTimestamp()
       message.channel.send(embed);
