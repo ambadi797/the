@@ -114,8 +114,8 @@ client.on("message", (message) => {
                 )
           .setTitle('WHITELIST ACCEPTED')
           .setDescription(text)
-          .setThumbnail('https://cdn.discordapp.com/attachments/811275118424621107/841956380884598794/tenor.gif')
-          .setImage('https://cdn.discordapp.com/attachments/811275118424621107/841956504705171456/the_kmpgc.gif')   
+          .setThumbnail('https://cdn.discordapp.com/attachments/780663000997822464/848835835565834320/27761366-a-rubber-stamp-with-an-accepted-seal.jpg')
+	  .addField('')
           .setFooter('KMPGC BOT')
           .setTimestamp()
             message.channel.send(embed);
