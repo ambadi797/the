@@ -115,7 +115,7 @@ client.on("message", (message) => {
           .setTitle('WHITELIST ACCEPTED')
           .setDescription(text)
           .setThumbnail('https://cdn.discordapp.com/attachments/780663000997822464/848835835565834320/27761366-a-rubber-stamp-with-an-accepted-seal.jpg')
-	  .addField('')
+	  .addField('ACCEPTED BY', message.author)
           .setFooter('KMPGC BOT')
           .setTimestamp()
             message.channel.send(embed);
