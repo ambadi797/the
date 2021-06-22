@@ -27,7 +27,7 @@ const activities_list = [
       });
 
 client.on('message', message => {
-    if (message.content === '.help {
+    if (message.content === '.help') {
         message.author.send(`HELP COMMANDS 
 prefix = .
 server offline = .off
