@@ -177,7 +177,8 @@ client.on("messageDelete", message => {
     **Attachment URL:** ${message.attachments.map(x => x.proxyURL)}
         `)
         channel.send(embed)
-    })
+     }
+    });
  
       
 client.on("message", (message) => {
