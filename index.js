@@ -58,7 +58,7 @@ leave Moosic = .leave`)
     **Attachment URL:** ${message.attachments.map(x => x.proxyURL)}
         `)
         channel.send(embed)
-    })
+    });
 
 client.commands = new discord.Collection();
 client.events = new discord.Collection();
