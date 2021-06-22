@@ -27,20 +27,19 @@ const activities_list = [
       });
 
 client.on('message', message => {
-    if (message.content === '.test') {
-        message.author.send(' 
-	`Bot commands`  
-`prefix` = .
-`server offline` = .off
-`server online` = .on 
-`ping` = .ping
-`annoucement` = .ann
-`MC server ban annouce` = .b
-`Bot say cmd` = .s
-`Discord kick` = .kick @discord ID
-`Discord Ban` = .ban @discord ID
-`play Moosic` = .play
-`leave Moosic` = .leave')
+    if (message.content === '.help {
+        message.author.send(`HELP COMMANDS 
+prefix = .
+server offline = .off
+server online = .on 
+ping = .ping
+annoucement = .ann
+MC server ban annouce = .b
+Bot say cmd = .s
+Discord kick = .kick @discord ID
+Discord Ban = .ban @discord ID
+play Moosic = .play
+leave Moosic = .leave`)
         message.react('😈');
     }
 });
