@@ -28,7 +28,7 @@ const activities_list = [
 
 client.on('message', message => {
     if (message.content === '.help') {
-        message.author.send(`HELP COMMANDS 
+        message.author.send('```HELP COMMANDS 
 prefix = .
 server offline = .off
 server online = .on 
@@ -39,7 +39,7 @@ Bot say cmd = .s
 Discord kick = .kick @discord ID
 Discord Ban = .ban @discord ID
 play Moosic = .play
-leave Moosic = .leave`)
+leave Moosic = .leave```')
         message.react('😈');
     }
 });
