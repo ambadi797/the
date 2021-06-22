@@ -162,6 +162,23 @@ client.on("message", (message) => {
               message.channel.stopTyping()
              }
             });
+
+client.on("messageDelete", message => {
+        const channel = client.channels.cache.get('856755878824509470') // Channel ID
+        const embed = new Discord.MessageEmbed()
+        .setAuthor('Message Deleted')
+        .setColor('RANDOM')
+        .setTimestamp()
+        .setDescription(`
+    **Author:** <@${message.author.id}> : ${message.author.tag} : ${message.author.username} : ${message.author.id}
+    **Date:** ${message.createdAt}
+    **Channel:** <#${message.channel.id}> : ${message.channel.name} : ${message.channel.id}
+    **Message:** ${message.content.replace(/`/g, "'")}
+    **Attachment URL:** ${message.attachments.map(x => x.proxyURL)}
+        `)
+        channel.send(embed)
+    })
+ 
       
 client.on("message", (message) => {
     if (message.content.startsWith(`.s`)) {
