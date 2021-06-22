@@ -28,7 +28,8 @@ const activities_list = [
 
 client.on('message', message => {
     if (message.content === '.test') {
-        message.author.send('     ```Bot commands```   
+        message.author.send(' 
+	`Bot commands`  
 `prefix` = .
 `server offline` = .off
 `server online` = .on 
