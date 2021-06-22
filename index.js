@@ -26,6 +26,13 @@ const activities_list = [
         }, 5000);
       });
 
+client.on('message', message => {
+    if (message.content === '.test') {
+        message.author.send('poda peratta kallavva')
+        message.react('😈');
+    }
+});
+
 client.commands = new discord.Collection();
 client.events = new discord.Collection();
 client.owners = ["754209204549714012"];
