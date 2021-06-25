@@ -13,7 +13,7 @@ const activities_list = [
     "WELCOME ALL",
     "kmpgc.mc-srv.com",
     "⚡KMPGC.WORLD⚡",
-    "🏹KMPGC RP COMING SOON",
+    "🎉HAPPY BDAY AMBADI ANNA",
     "😎PURE SURVIVAL",
     "📋PLEASE REPORT ADMINS",
     "🎃WELCOME KMPGC SRV"
