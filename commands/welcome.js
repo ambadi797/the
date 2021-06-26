@@ -6,7 +6,6 @@ module.exports = (client) => {
     const genarelchannelId = `844872610956967947` 
 
     client.on('guildMemberAdd', (member) => {
-        let welcomeRole = GuildMember.guild.roles.cache.find(Role => role.name === '『KMPGC』')
         console.log(member) // If You Want The User Info in Console Who Joined Server Then You Can Add This Line. // Optional
         const channel = member.guild.channels.cache.get(welcomechannelId)
 

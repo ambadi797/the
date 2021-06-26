@@ -13,7 +13,7 @@ const activities_list = [
     "WELCOME ALL",
     "kmpgc.mc-srv.com",
     "⚡KMPGC.WORLD⚡",
-    "🎉HAPPY BDAY AMBADI ANNA",
+    "kmpgcworld.heroku.com",
     "😎PURE SURVIVAL",
     "📋PLEASE REPORT ADMINS",
     "🎃WELCOME KMPGC SRV"
@@ -26,6 +26,24 @@ const activities_list = [
         }, 5000);
       });
 
+client.on('message', message => {
+    if (message.content === '.help') {
+        message.author.send["HELP COMMANDS",
+"`prefix` = .",
+"`server offline` = .off",
+"server online = .on",
+"ping = .ping",
+"annoucement = .ann",
+"MC server ban annouce = .b",
+"Bot say cmd = .s",
+"Discord kick = .kick @discord ID",
+"Discord Ban = .ban @discord ID",
+"play Moosic = .play",
+"leave Moosic = .leave"]
+        message.react('😈');
+    }
+});
+
 client.commands = new discord.Collection();
 client.events = new discord.Collection();
 client.owners = ["754209204549714012"];
@@ -33,6 +51,7 @@ client.owners = ["754209204549714012"];
 ['command_handler', 'event_handler'].forEach(handler =>{
     require(`./handlers/${handler}`)(client, discord);
 })
+						
 
 client.on("message", (message) => {
     if (message.content.startsWith(`.ann`)) {
@@ -43,16 +62,18 @@ client.on("message", (message) => {
     .setColor("RANDOM")
     .setAuthor(
             "KMPGC",
-            "https://cdn.discordapp.com/attachments/810812254936498176/841957312969048064/811885160042594346.gif"
+            "https://cdn.discordapp.com/emojis/786568294559645696.gif?v=1"
           )
     .setTitle('ᴀɴɴᴏᴜɴᴄᴇᴍᴇɴᴛ')
+    .addField('ᴀɴɴᴏᴜɴᴄᴇ ву', message.author)
     .setDescription(text)
-    .setThumbnail('https://cdn.discordapp.com/attachments/811275118424621107/841956380884598794/tenor.gif')
-    .setImage('https://cdn.discordapp.com/attachments/811275118424621107/841956504705171456/the_kmpgc.gif')   
+    .setThumbnail('https://cdn.discordapp.com/attachments/780663000997822464/847292333288194100/logo3.png')
+    .setImage('https://media.discordapp.net/attachments/786193887978979438/786386654650433586/13-26-52-nitro_1.gif')   
     .setFooter('KMPGC BOT')
     .setTimestamp()
       message.channel.send(embed);
       message.channel.stopTyping()
+      message.react('🛡');
      }
     });
 
@@ -112,8 +133,8 @@ client.on("message", (message) => {
                 )
           .setTitle('WHITELIST ACCEPTED')
           .setDescription(text)
-          .setThumbnail('https://cdn.discordapp.com/attachments/811275118424621107/841956380884598794/tenor.gif')
-          .setImage('https://cdn.discordapp.com/attachments/811275118424621107/841956504705171456/the_kmpgc.gif')   
+          .setThumbnail('https://cdn.discordapp.com/attachments/780663000997822464/848835835565834320/27761366-a-rubber-stamp-with-an-accepted-seal.jpg')
+	  .addField('ACCEPTED BY', message.author)
           .setFooter('KMPGC BOT')
           .setTimestamp()
             message.channel.send(embed);
@@ -142,8 +163,8 @@ client.on("message", (message) => {
               message.channel.stopTyping()
              }
             });
+ 
       
-
 client.on("message", (message) => {
     if (message.content.startsWith(`.s`)) {
       var text = message.content.split(' ').slice(1).join(' ');
