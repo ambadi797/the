@@ -1,6 +1,7 @@
 const discord = require('discord.js');
 const { MessageEmbed } = require("discord.js");
 const client = new discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"]})
+const client = new Client({ partials: ['MESSAGE'] });
 const prefix = '.';
 
 
