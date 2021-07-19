@@ -44,6 +44,19 @@ client.on('message', message => {
     }
 });
 
+if (cmd === '.poll'){
+        let pollChannel = message.mentions.channels.first();
+        let pollDescription = args.slice(1).join(' ');
+
+        let embedPoll = new Discord.MessageEmbed()
+        .setTitle('😲 New Poll! 😲')
+        .setDescription(pollDescription)
+        .setColor('YELLOW')
+        let msgEmbed = await pollChannel.send(embedPoll);
+        await msgEmbed.react('👍')
+        await msgEmbed.react('👎')
+    }
+
 client.commands = new discord.Collection();
 client.events = new discord.Collection();
 client.owners = ["754209204549714012"];
